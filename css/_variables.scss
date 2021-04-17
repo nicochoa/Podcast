@@ -1,0 +1,27 @@
+// body and footer variables
+$color_btn_norm: #00F3BB;
+$hover_btn_gra: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+$pri_back_color: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+$color_font_dark:#060A24;
+$color_font_contrast:#FFFFFF;
+$back_color_figure:#0000EC;
+
+$font_text: 'IBM Plex Mono', monospace;
+$font_text_size:0.87rem;
+
+$font_title:'IBM Plex Sans', sans-serif;
+$font_title_weight: 300;
+$font_title_size:2.25rem;
+
+$font_sec_title: "IBM Plex Sans", sans-serif;
+$font_sec_title_size:1.5rem;
+$font_sec_title_weight: 600;
+
+$font_btn: 'IBMPlexMono-Medium';
+$font_btn_size:1rem;
+
+// special body and footer variables for desktop
+
+$font_first_title_size_desk:4rem;
+$font_title_size_desk:3rem;
+$font_btn_size:1.12rem;

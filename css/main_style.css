@@ -1,0 +1,240 @@
+body {
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.btn_con {
+  font-family: "IBM Plex Mono", monospace;
+  color: #060A24;
+  background: #00F3BB;
+  padding: 1rem 0;
+  font-size: 1.12rem;
+  letter-spacing: 0;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+
+.intro, .our_themes {
+  margin: 1rem;
+}
+
+p {
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.87rem;
+  margin-bottom: 0 1rem 2rem 0;
+}
+
+h2 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 2.25rem;
+  font-weight: 300;
+}
+
+h2 span {
+  text-decoration: line-through;
+}
+
+h2 span:last-child {
+  text-decoration: none;
+  color: #0000EC;
+}
+
+.sec_title {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.guests img {
+  width: 100%;
+  display: block;
+}
+
+.our_themes {
+  display: flex wrap;
+}
+
+.theme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 3rem 8rem .2fr 2rem 1fr;
+      grid-template-rows: 3rem 8rem .2fr 2rem 1fr;
+}
+
+.grid p {
+  margin: 0 1rem;
+}
+
+.grid > h2 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  margin: 3rem 1rem;
+  color: #FFFFFF;
+}
+
+.episodes {
+  display: flex wrap;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  margin: 1rem;
+}
+
+iframe {
+  width: 100%;
+}
+
+.come_from {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 5;
+  -ms-grid-row-span: 1;
+  grid-row: 5/6;
+  margin: 3rem 0;
+}
+
+.come_from img {
+  width: 100%;
+}
+
+.back_form {
+  background: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 6;
+  grid-row: 1/7;
+  -webkit-clip-path: polygon(0 3%, 100% 1%, 100% 58%, 0 60%);
+          clip-path: polygon(0 3%, 100% 1%, 100% 58%, 0 60%);
+  z-index: -1;
+}
+
+.come_from h2, .guests h2 {
+  margin-left: 1rem;
+}
+
+@media (min-width: 900px) {
+  .intro, .our_themes {
+    margin: 4rem 12.5rem;
+  }
+  .intro h2, .our_themes h2 {
+    margin-left: 0;
+  }
+  .intro h2 {
+    margin-top: 9rem;
+    font-size: 4rem;
+  }
+  .intro > p {
+    width: 50%;
+    margin: 1rem 0 2rem 0;
+  }
+  .our_themes h2 {
+    margin-bottom: 5rem;
+  }
+  .our_themes p {
+    padding: 1rem;
+  }
+  .grid h2 {
+    margin: 4rem 12.5rem;
+  }
+  .grid iframe {
+    width: 45%;
+    margin: 1rem;
+  }
+  .grid .episodes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 1rem 1rem 5rem 1rem;
+  }
+  .come_from {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .come_from h2 {
+    margin: 40% 0 2rem 0;
+  }
+  .come_from p {
+    margin: 0;
+    max-width: 60%;
+  }
+  .come_from img {
+    width: 40%;
+    margin: 0 5% 0 5%;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+  }
+  .guests h2 {
+    margin: 4rem 12.5rem;
+  }
+  .guests img {
+    width: calc((100% /3) + 3px);
+    margin: -3px;
+    display: inline;
+  }
+  .guests_photos {
+    display: flex wrap;
+    -webkit-box-pack: stretch;
+        -ms-flex-pack: stretch;
+            justify-content: stretch;
+  }
+  .theme_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .icons i {
+    margin: 0 .5rem;
+  }
+  .btn_con:hover {
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    color: #FFFFFF;
+  }
+  .btn_con {
+    padding: 1rem 3.68rem;
+    width: 14rem;
+    margin-bottom: 8rem;
+    font-size: 1.12rem;
+  }
+}
+/*# sourceMappingURL=main_style.css.map */

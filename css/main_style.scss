@@ -1,0 +1,216 @@
+@import "variables";
+
+body{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+// styles for buttons
+
+.btn_con{
+    font-family: $font_text;
+    color: $color_font_dark;
+    background: $color_btn_norm;
+    padding: 1rem 0;
+    font-size: $font_btn_size;
+    letter-spacing: 0;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+
+}
+
+// Basic style sections
+
+.intro, .our_themes{
+    margin: 1rem;    
+}
+p{
+    font-family: $font_text;
+    font-size: $font_text_size;
+    margin-bottom: 0 1rem 2rem 0;
+}
+h2{
+    font-family: $font_title;
+    font-size: $font_title_size;
+    font-weight: $font_title_weight;
+    span{
+        text-decoration: line-through;
+    }
+    span:last-child{
+        text-decoration: none;
+        color:$back_color_figure;
+    }
+}
+.sec_title{
+    font-family: $font_sec_title;
+    font-size: $font_sec_title_size;
+    font-weight: $font_sec_title_weight;
+    text-align: center;
+}
+
+// here start sections styling
+
+.guests img{
+    width: 100%;
+    display: block;
+}
+.our_themes{
+    display: flex wrap;
+}
+.theme{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+}
+
+// here start's the grid styling for the main section
+
+.grid{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 3rem 8rem .2fr 2rem 1fr ;
+    p{
+        margin: 0 1rem;
+    }    
+}
+.grid>h2{
+    grid-column: 1/3;
+    grid-row:2/3;
+    margin: 3rem 1rem;
+    
+    color: $color_font_contrast;
+}
+.episodes{
+    display: flex wrap;
+    grid-column: 1/3;
+    grid-row:3/4;
+    margin:1rem;
+}
+iframe{
+    width: 100%;
+}
+.come_from{
+    grid-column: 1/3;
+    grid-row:5/6;
+    margin:3rem 0;
+    img{
+        width: 100%;
+    }
+}
+.back_form{
+    background: $pri_back_color;
+    grid-column: 1/3;
+    grid-row:1/7;
+    clip-path: polygon(0 3%, 100% 1%, 100% 58%, 0 60%);
+    z-index: -1;
+}
+.come_from, .guests{
+    h2{
+        margin-left: 1rem;
+    }
+}
+
+// Styling changes for desktops
+
+@media (min-width:900px){
+
+    //styling for intro 
+
+    .intro, .our_themes{
+        margin:4rem 12.5rem;
+        & h2{
+            margin-left: 0;
+        }
+    }
+    .intro h2{
+        margin-top: 9rem;
+        font-size: $font_first_title_size_desk;
+    }
+    .intro>p{
+        width: 50%;
+        margin: 1rem 0 2rem 0;
+    }
+
+    // Main section styling
+
+    .our_themes {
+        h2{
+            margin-bottom: 5rem;
+        } 
+        p{
+            padding: 1rem;
+        }               
+    }
+    .grid{
+        & h2 {
+            margin:4rem 12.5rem;
+        }
+        & iframe{
+            width: 45%;
+            margin: 1rem;
+        }
+        .episodes{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 1rem 1rem 5rem 1rem;
+        }        
+    }
+    .come_from{
+        display:flex;
+        justify-content: center;
+        h2{
+            margin: 40% 0 2rem 0;
+        }
+        p{
+            margin: 0;  
+            max-width: 60%;
+        }
+        img{
+            width:40%;
+            margin:0 5% 0 5%;
+            flex-shrink: 0;
+        }
+    }  
+    .guests{
+        h2{
+            margin:4rem 12.5rem;
+            
+        }
+        img{
+            width: calc((100% /3) + 3px);
+            margin: -3px;
+            display: inline;
+        }
+    }
+    .guests_photos{
+        display: flex wrap;
+        justify-content: stretch;
+        
+    }
+    .theme_container{
+        display:flex;
+        justify-content: space-between;
+
+    }
+    .icons{
+        i{
+            margin: 0 .5rem;
+        }
+    }
+    .btn_con:hover{
+        background-image: $hover_btn_gra;
+        color: $color_font_contrast;
+    }
+    .btn_con{
+        padding: 1rem 3.68rem;
+        width: 14rem;
+        margin-bottom: 8rem;
+        font-size: $font_btn_size;
+    }
+
+}
+
+

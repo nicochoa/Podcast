@@ -1,0 +1,77 @@
+@import "variables";
+
+footer p{
+    text-align: center;
+    padding-top: 1.5rem;
+}
+.news{
+    background: $pri_back_color;
+    clip-path: polygon(0 20%, 100% 1%, 100% 100%, 0 100%);
+    padding: 2rem 0;
+    h2{
+        color: $color_font_contrast;
+        text-align: center;
+        padding: 2rem;
+    }
+    
+    .btn_con{
+        display: block;
+        width:calc(100% - 2rem);
+        margin:1rem;
+    }
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 3rem 2.5rem 3rem;
+    a{
+        color: $color_font_dark;
+    }
+}
+
+// Styling changes for desktops
+
+@media (min-width:900px){
+    .icons{
+        i{
+            margin: 0 .5rem;
+        }
+    }
+    .contact_links{
+        
+        display: flex;
+        padding: 2rem 0 2rem 10rem;
+        & .icons{
+            display: flex;
+            justify-content: flex-end;
+            align-self: center;
+            gap: 1rem;
+            width: 100%;
+            padding:0 10rem 0 0;
+
+        }
+        & p{
+            padding: 0;
+            text-align: left;
+            width: 100%;
+        }
+    }    
+    .news{
+        h2{
+            font-size: $font_title_size_desk;
+            padding:9rem 0 1rem 0;
+            margin:0;
+        }
+        div{
+            display: flex;
+            justify-content: center;
+        }
+        .btn_con{
+            padding: 1rem 3.68rem;
+            width: 15rem;
+            margin-bottom: 8rem;
+            font-size: $font_btn_size;
+        }
+    }
+    
+}

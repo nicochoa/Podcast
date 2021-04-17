@@ -1,0 +1,36 @@
+/* estilo para botones
+
+.btn_conocemas{
+    font-family: 'IBM Plex Mono', monospace;
+    color: #060A24;
+    background: #00F3BB;
+    padding: 1rem 3rem;
+    font-size: 1.1rem;
+    letter-spacing: 0;
+    text-align: center;
+    text-decoration: none;
+}
+.btn_conocemas:hover{
+    background-image: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+    color: #FFFFFF;
+}
+.btn_nav{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 1rem;
+    color: #060A24;
+    letter-spacing: 0;
+    padding: .5rem 1rem;
+    margin: 3rem;
+    display: block;
+    text-decoration: none;
+}
+.btn_nav:hover{
+    color: #00F3BB;
+    text-decoration: line-through;
+}
+a .btn_nav:active{
+    color: rgb(6, 10, 35) 56%;
+    text-decoration: line-through;
+} */
+
+
