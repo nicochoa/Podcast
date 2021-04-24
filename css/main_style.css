@@ -108,6 +108,9 @@ h2 span:last-child {
 
 iframe {
   width: 100%;
+  height: 232px;
+  border: 0;
+  background-color: transparent;
 }
 
 .come_from {
